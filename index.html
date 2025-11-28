@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>射擊遊戲網站</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Noto+Sans+TC:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ec1313",
+              "background-light": "#f8f6f6",
+              "background-dark": "#121212",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "Noto Sans TC", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-[1280px] flex-1">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-6 sm:px-10 py-3 bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">遊戲 Logo</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">首頁</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="sdsd.html">槍枝介紹</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="mode.html">遊戲模式</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">最新消息</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">社群</a>
+</nav>
+<div class="flex items-center justify-end">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">立即下載</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative">
+<div class="flex min-h-[60vh] md:min-h-[75vh] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-4 text-center" data-alt="A dynamic scene from a futuristic battlefield with soldiers in combat." style='background-image: linear-gradient(rgba(18, 18, 18, 0.6) 0%, rgba(18, 18, 18, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQbQe29xy_0W0vAgk1GUjfRPTec6PAseKyzsq_ArB2uKt9YDWOsHRRsXE6FXr5xI2RgsLi8fzlVvvjxMQ8SWKTwtoldA6sn3aAN6IK8YokIYFiZtq1ygiTZyAwoS2QlkH0_mY4IINslbEfFYxAgVacoxMzGpIcl5CJa575KPjeF_Rm_gdW2cduelTuE97DtB89H9spcAzBPjVkyT3i7WXoYfe3JlnACXcXNj3mHuyKIS0ab1vrShq4fYOEWkTua8pYr453cBRjhPi-");'>
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl md:text-6xl">
+                                        TACTICAL NEXUS
+                                    </h1>
+<h2 class="text-white/90 text-base font-normal leading-normal sm:text-lg">定義次世代戰術射擊</h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary hover:bg-primary/90 transition-colors text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">觀看預告片</span>
+</button>
+</div>
+</section>
+<section class="flex flex-col gap-10 px-4 sm:px-6 md:px-10 py-16 sm:py-20 @container">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                    遊戲核心特色
+                                </h2>
+<p class="text-white/70 text-base font-normal leading-normal max-w-[720px]">探索讓我們與眾不同的獨特遊戲機制與體驗。</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="flex flex-1 gap-4 rounded-xl border border-white/10 bg-[#1E1E1E] p-6 flex-col text-center items-center">
+<div class="text-primary text-4xl mb-2">
+<span class="material-symbols-outlined">swords</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold leading-tight">龐大軍火庫</h3>
+<p class="text-white/60 text-sm font-normal leading-normal">探索擁有深度客製化選項的廣泛武器庫。</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-white/10 bg-[#1E1E1E] p-6 flex-col text-center items-center">
+<div class="text-primary text-4xl mb-2">
+<span class="material-symbols-outlined">map</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold leading-tight">多樣化戰場</h3>
+<p class="text-white/60 text-sm font-normal leading-normal">在設計精美的多樣化地圖中征服敵人。</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-white/10 bg-[#1E1E1E] p-6 flex-col text-center items-center">
+<div class="text-primary text-4xl mb-2">
+<span class="material-symbols-outlined">military_tech</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold leading-tight">競技性對戰</h3>
+<p class="text-white/60 text-sm font-normal leading-normal">在考驗技巧與團隊合作的排名模式中證明自己。</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 sm:px-6 md:px-10 py-10 space-y-8">
+<div class="bg-cover bg-center flex flex-col items-stretch justify-end rounded-xl overflow-hidden min-h-[300px] md:min-h-[400px]" data-alt="A collection of futuristic assault rifles and pistols displayed against a dark, metallic background." style='background-image: linear-gradient(0deg, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKJt5HSmRh0wotG0M35sT1V5Dm_a5z2csAGnEMlXp2KPKpkoT0XBF8ve0owD1Vm64MB3JKITURjzqIZ4nYf6Lf0im17hyXvmuzxDAPv5usp25XaDSnhvJi5de70QnKeN_-Pu1ws82JFsGcXWihftbZ3xhfe2FELT9nTHa1yCmbbN9rmUumoauEr7CzkXeANOwayttgDY0eU2zfjQ2mQ81-hVTnPeDovzEYIqYxsHS-EhHnxj6M-IlqIPNp1fcgL6qzybN0QfozPUrs");'>
+<div class="flex w-full flex-col md:flex-row items-start md:items-end justify-between gap-4 p-6 md:p-8 bg-gradient-to-t from-black/50 to-transparent">
+<div class="flex max-w-[480px] flex-1 flex-col gap-2">
+<p class="text-white tracking-light text-2xl sm:text-3xl font-bold leading-tight">探索所有槍枝</p>
+<p class="text-white/90 text-base font-medium leading-normal">從手槍到狙擊槍，找到最適合你的完美武器。</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em] shrink-0">
+<span class="truncate">探索軍火庫</span>
+</button>
+</div>
+</div>
+<div class="bg-cover bg-center flex flex-col items-stretch justify-end rounded-xl overflow-hidden min-h-[300px] md:min-h-[400px]" data-alt="An overhead view of a complex, industrial game map with multiple pathways and strategic points." style='background-image: linear-gradient(0deg, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuABl8rDvB4cRTkAEq6vnqvTNL9FGmBTDODMDGkA-2VqydbVBZ8D2lwvhtDGt5pTd6m2xYKbsXQPx_Us-dQ1vtQefds2qPBHQiNHrhGX1bjLWstvA_6qz4SquvDFgQ7k-XDqDQmIDnqlmy5CD-FGSObUK_I7WQtGzpMJTrH6-4WCbKyZvr9NNQ_p9XWJIUvhcF3R6R4VruNPVJoQB46NebHIVdcELsWDKmFDMPPcMYHVvyBJngafFsZID6hh2Pol9UBVPUlLYAzlPx85");'>
+<div class="flex w-full flex-col md:flex-row items-start md:items-end justify-between gap-4 p-6 md:p-8 bg-gradient-to-t from-black/50 to-transparent">
+<div class="flex max-w-[480px] flex-1 flex-col gap-2">
+<p class="text-white tracking-light text-2xl sm:text-3xl font-bold leading-tight">查看遊戲模式</p>
+<p class="text-white/90 text-base font-medium leading-normal">無論是快節奏的團隊死鬥還是策略性的佔領模式，都能找到你的戰場。</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em] shrink-0">
+<span class="truncate">了解更多</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#1E1E1E] text-white/70">
+<div class="max-w-[1280px] mx-auto px-6 sm:px-10 py-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path></svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">遊戲 Logo</h2>
+</div>
+<p class="text-sm text-center md:text-left">© 2024 Your Game Company. All rights reserved.</p>
+</div>
+<div class="flex items-center gap-6 text-2xl">
+<a aria-label="Discord" class="hover:text-primary transition-colors" href="#">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.36981C18.698 3.50481 16.942 2.86981 15.099 2.45981C15.039 2.61381 14.984 2.82481 14.928 3.02881C13.258 2.73881 11.533 2.73881 9.86299 3.02881C9.80799 2.82481 9.75299 2.61381 9.69299 2.45981C7.84999 2.86981 6.09399 3.50481 4.47599 4.36981C1.52999 9.07481 0.871992 13.5938 1.45899 18.0068C3.31399 19.1438 5.10899 19.8398 6.84599 20.3368C7.12999 19.8458 7.39999 19.3368 7.64799 18.8118C7.15999 18.5708 6.69099 18.3068 6.24299 18.0288C6.38699 17.9538 6.52599 17.8748 6.66499 17.7958C10.279 19.4218 14.484 19.4218 18.098 17.7958C18.237 17.8748 18.376 17.9538 18.52 18.0288C18.072 18.3068 17.603 18.5708 17.115 18.8118C17.363 19.3368 17.633 19.8458 17.917 20.3368C19.654 19.8398 21.449 19.1438 23.304 18.0068C24.07 12.7938 23.225 8.12781 20.317 4.36981ZM8.68399 15.1858C7.67499 15.1858 6.85199 14.3618 6.85199 13.3528C6.85199 12.3438 7.67499 11.5208 8.68399 11.5208C9.69299 11.5208 10.516 12.3438 10.516 13.3528C10.516 14.3618 9.69299 15.1858 8.68399 15.1858ZM16.112 15.1858C15.103 15.1858 14.28 14.3618 14.28 13.3528C14.28 12.3438 15.103 11.5208 16.112 11.5208C17.121 11.5208 17.944 12.3438 17.944 13.3528C17.944 14.3618 17.121 15.1858 16.112 15.1858Z"></path></svg>
+</a>
+<a aria-label="Twitter" class="hover:text-primary transition-colors" href="#">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<a aria-label="YouTube" class="hover:text-primary transition-colors" href="#">
+<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path></svg>
+</a>
+</div>
+</div>
+<div class="border-t border-white/10 mt-8 pt-6 flex flex-col sm:flex-row justify-between text-xs gap-4">
+<div class="flex gap-4 justify-center sm:justify-start">
+<a class="hover:text-primary transition-colors" href="#">系統需求</a>
+<a class="hover:text-primary transition-colors" href="#">隱私權政策</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

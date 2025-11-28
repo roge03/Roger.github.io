@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Armory - Game Title</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ec1313",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221010",
+              "neutral": {
+                "800": "#482323",
+                "400": "#c99292"
+              }
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-neutral-800 px-4 md:px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">luchy game</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal" href="index.html">首頁</a>
+<a class="text-primary text-sm font-bold leading-normal" href="sdsd.html">槍枝介紹</a>
+<a class="text-white text-sm font-medium leading-normal" href="mode.html">遊戲模式</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-colors">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</div>
+<div class="md:hidden">
+<button class="text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col gap-4 mt-6">
+<div class="flex flex-wrap justify-between items-center gap-3 p-4">
+<p class="text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">ARMORY</p>
+</div>
+<div class="flex flex-col md:flex-row gap-4 px-4">
+<div class="px-0 py-3 flex-grow">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-neutral-400 flex border-none bg-neutral-800 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-white focus:outline-0 focus:ring-0 border-none bg-neutral-800 focus:border-none h-full placeholder:text-neutral-400 px-4 border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search for a weapon by name..." value=""/>
+</div>
+</label>
+</div>
+<button class="flex-shrink-0 flex items-center justify-center gap-2 min-w-[84px] cursor-pointer overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-colors">
+<span class="material-symbols-outlined">compare_arrows</span>
+<span class="truncate">Compare (0)</span>
+</button>
+</div>
+<div class="flex gap-3 p-3 overflow-x-auto">
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-primary pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">All</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-neutral-800 pl-4 pr-4 hover:bg-primary/50 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Assault Rifles</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-neutral-800 pl-4 pr-4 hover:bg-primary/50 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">SMGs</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-neutral-800 pl-4 pr-4 hover:bg-primary/50 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">LMGs</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-neutral-800 pl-4 pr-4 hover:bg-primary/50 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Sniper Rifles</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-neutral-800 pl-4 pr-4 hover:bg-primary/50 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Shotguns</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-neutral-800 pl-4 pr-4 hover:bg-primary/50 transition-colors">
+<p class="text-white text-sm font-medium leading-normal">Pistols</p>
+</div>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 p-4">
+<div class="flex flex-col gap-3 pb-3 bg-neutral-800/50 rounded-lg overflow-hidden border border-transparent hover:border-primary transition-all group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="VX-7 Havoc assault rifle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAm2rSkF3RWNfKHPueZNt-deiW3du5CcI2OhgQcUh8aMSNImdbzt7R9RJBixRZMqza8QC4oBHJmyB9QHmFp3XmsC_YvWnopqmD1nCsBHlbJNYy47ZtlK4g-FXPkMQ7dDweFAVF1uSb2qNEw_a9ZtlCgq7KIvX9QWLLrUSCAEwUWD9QO8q7Z6ClAuRBjbZDWyVG6kr0C8TRBhBhI0v5MAum4Olgea4QaMJY9hgXyHMvo672ChFmLO1EZhntqmNSRYVMA455KUOR8s_uJ");'></div>
+<div class="px-4">
+<p class="text-white text-lg font-bold leading-normal">VX-7 Havoc</p>
+<p class="text-neutral-400 text-sm font-normal leading-normal">Assault Rifle</p>
+<div class="mt-2 flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<span class="text-white font-medium">30</span>
+</div>
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="text-white font-medium">750</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-neutral-800/50 rounded-lg overflow-hidden border border-transparent hover:border-primary transition-all group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Stinger S9 SMG" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCa2NqMJCQCi6_ISrW_-Itb5M3zpkinrCn1c1g5DuVvbgkSy6RjNSJfuTh937UEAqSQM26zxkSrRrTR1DhwXZ1-drpEgOS2Iyvtq3phPRcy-5yIlUj_lQY0GSsc-vmx-MePRi6z4ShmtBXsGlJLElDLhdofMYltKCs6Oj-82vEUU8z93TXosqFxnyO-NTehhapV0R2dsQd5-cDanuJBZawjc8kShejM8xkNexNV-od1v4grsZofNpfePZAjCBZ0dwEpUqAtUIFwpvR9");'></div>
+<div class="px-4">
+<p class="text-white text-lg font-bold leading-normal">Stinger S9</p>
+<p class="text-neutral-400 text-sm font-normal leading-normal">SMG</p>
+<div class="mt-2 flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<span class="text-white font-medium">22</span>
+</div>
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="text-white font-medium">900</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-neutral-800/50 rounded-lg overflow-hidden border border-transparent hover:border-primary transition-all group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Goliath-X LMG" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZTazrcfyMy3a-2ZVSkfKGu9hDjrf34MchDUGMhToC5XWTlQygmNIYb9N0YaOF1_cs27QCH0t5yBLj4IjvlKHp7C8xmH9fxHvCVthhislBowVmP3VmalFQmJuP52pIQHR20k6REoEroCGHOvwZc5UpgiY0Z6dT7ULrOrH1u3eju0Td1wvjj8fDI-JFl3jjOcW6oppHIYIPsH_QG0v43NrOrS4y5WlrAuYbOTsZ2hDTK1j6MJsGprqg8fK9I5DJ3mMjKQrcJFKzMPk2");'></div>
+<div class="px-4">
+<p class="text-white text-lg font-bold leading-normal">Goliath-X</p>
+<p class="text-neutral-400 text-sm font-normal leading-normal">LMG</p>
+<div class="mt-2 flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<span class="text-white font-medium">45</span>
+</div>
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="text-white font-medium">600</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-neutral-800/50 rounded-lg overflow-hidden border border-transparent hover:border-primary transition-all group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Spectre-1 sniper rifle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCD4LU2oxD8SZZS2vqVFCHBsDivFFYJD51c86gdjm2FQQJu_-3EVMqKThsbNWpOfLCiZjjqcAlFTOZXrjMhgDDtVyEz0Yw21rVwD_jcHH7sjvcuGQMvRpL9_sy_clehLQH5etKYIRyQXGXl9LYPk6li9Wxz_RBkfvifwx5kYP5kY4Tr8tmsAHgscyUPdskEJCQBBEvM83YftvGU3nNKKMbr4vd1sXoqDaAiYnYfY2zr4RovxcX06AveT06cV8wXqgT9I3Qb2zueetCu");'></div>
+<div class="px-4">
+<p class="text-white text-lg font-bold leading-normal">Spectre-1</p>
+<p class="text-neutral-400 text-sm font-normal leading-normal">Sniper Rifle</p>
+<div class="mt-2 flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<span class="text-white font-medium">150</span>
+</div>
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="text-white font-medium">50</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-neutral-800/50 rounded-lg overflow-hidden border border-transparent hover:border-primary transition-all group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Bulldog 762 assault rifle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAo10OK9gTeJWuS4zI8xjPeNGeiwomuQjPnEr542dYuoUZqjkOlsNTWF85US883GS6L_OkX6Cs34Q0LMwLEOoLhgnEme7xeHZT9dUpz72ijql_E8O_ZPMdjf0UkQ9rnnHlJbrjyA5vRC7olZ3QJpVCyRVcea7nR2K1AMdVwcPtRBQydVEOaYCn0aBAf_KDOY2BQ58D1IL24eQfl2A1d0ZEizS8Zp1mPzEOe9b0syGjHzm7IFvbRK4u9As9tfRV-bkE5xNELQflRgyCM");'></div>
+<div class="px-4">
+<p class="text-white text-lg font-bold leading-normal">Bulldog 762</p>
+<p class="text-neutral-400 text-sm font-normal leading-normal">Assault Rifle</p>
+<div class="mt-2 flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<span class="text-white font-medium">32</span>
+</div>
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="text-white font-medium">700</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-neutral-800/50 rounded-lg overflow-hidden border border-transparent hover:border-primary transition-all group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Reaper V shotgun" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgqaNcXTPLaHsdtPy_Ukv6djN7M0pUhGBWQEXdYjA3r25H1om5WtTEUSQA08vLso0ja588LuICmUXQji2pDMF9NezZDbmSW9fzaptbEKdyCg9lRSHXDYyfwyfPK_dDOIlaXeJ2aMeQwbxYeWUvbz-Lzmvc_FppTVk9-TiITgHr4JYTdl_VRPOGTcsqy0UN1EDts1UL6adxWWhAoozHd9Y21Gc6Js4Wnoyur0OXOFmNSm5DAb0onPWj8w84fzZVKRZEdx3WfcU3GvAF");'></div>
+<div class="px-4">
+<p class="text-white text-lg font-bold leading-normal">Reaper V</p>
+<p class="text-neutral-400 text-sm font-normal leading-normal">Shotgun</p>
+<div class="mt-2 flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<span class="text-white font-medium">85</span>
+</div>
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="text-white font-medium">120</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-neutral-800/50 rounded-lg overflow-hidden border border-transparent hover:border-primary transition-all group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Hornet-SMG" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_T9U-S8_Oip-H3auqwoG1msf1i2_mLibiNtMaG-g_kpukWY-HJAa1N-_NblMVfcHzDDcAAE5EHGqF2R3PHPuJlnhThyNnN6jainYiFK8CO_rtTlZz1zUyLLaikKkD2zZgxB1SExKBeAYTq1oaqeHUp7Oh-B9onzeRRsa9xG_89p-ioRRi0uLVbrqXhnHHhFSbn7hWqVmdPn1HF1_IOc9vx-iFguZzZY4mNRx1A3yapIfuSq8GmVmOlRY5ngMFj48k2NH6LmyPFk7B");'></div>
+<div class="px-4">
+<p class="text-white text-lg font-bold leading-normal">Hornet-SMG</p>
+<p class="text-neutral-400 text-sm font-normal leading-normal">SMG</p>
+<div class="mt-2 flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<span class="text-white font-medium">25</span>
+</div>
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="text-white font-medium">850</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-neutral-800/50 rounded-lg overflow-hidden border border-transparent hover:border-primary transition-all group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Kilo-9 Sidearm pistol" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVgcOCZOIRhD1ga1P7sB8zjiY9j3fjy_McjYKkVqugT8X_nT0z2lOgNCzznUAcbqAmJcEb-dGhsNlDByhlYFZ5Qn-C1mvcggX0u3d6swIhEl4ePguLIUhslNxzBdK2zzLmTBsM2NeYEyk8RRsZQBhOo4VQsuxPSOVvXv6LHTfKUghmz0nL9lulzK3pyHC61CHAR-IxolhAREQhDnJ-H2HvSxhr8Hsos1rfK_Jk-gAFcLz60KwrORKH-ER6gmuzRvxWf5Uj2_0FDZ-s");'></div>
+<div class="px-4">
+<p class="text-white text-lg font-bold leading-normal">Kilo-9 Sidearm</p>
+<p class="text-neutral-400 text-sm font-normal leading-normal">Pistol</p>
+<div class="mt-2 flex items-center gap-4 text-sm">
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<span class="text-white font-medium">20</span>
+</div>
+<div class="flex items-center gap-1 text-neutral-400">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span class="text-white font-medium">400</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

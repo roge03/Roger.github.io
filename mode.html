@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>爆破模式介紹</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Noto+Sans+TC:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ec1313",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221010",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "Noto Sans TC", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-6xl px-4 sm:px-10 md:px-20 lg:px-0">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">lucky game</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">首頁</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="sdsd.html">槍枝介紹</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="mode.html">新聞</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">社群</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-colors">
+<span class="truncate">開始遊戲</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="text-white p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col gap-12 md:gap-16 lg:gap-20 py-10">
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4" data-alt="A dramatic scene of soldiers in a tactical standoff in a ruined city." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBacEYkweBKcvC6OeTEMKTCckFcS3WFJ23cBzzVvNI2WlbsXdMaRfAHWcCP6lSuXGOzkWeU7gKm889iohphLWx9leTf1WkU8-CRX9TDJeOUPV0oEilALzUACbISFOvnSII_ocUwumhh9eaccugsPSFIBUWTvU_B8TsBxO1xhC6Y0ON9K7tc2staGxdSDi6C89P5ksX2n0cqjS49lr8uDQ0bCUVzD8s2qSbqgjao3UaHwHy0qOy7oelfoCgj0Drxb6Xi_ZInlAKJAd25");'>
+<div class="flex flex-col gap-2 text-center">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                          爆破模式
+                                        </h1>
+<h2 class="text-white/90 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">策略、合作與榮耀的終極考驗</h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-red-700 transition-colors">
+<span class="truncate">深入了解</span>
+</button>
+</div>
+</div>
+</div>
+<section>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">核心目標</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+<div class="flex flex-col gap-4 pb-3 bg-white/5 rounded-lg p-6 border border-white/10">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-4xl">bomb</span>
+<p class="text-white text-xl font-medium leading-normal">進攻方</p>
+</div>
+<p class="text-white/70 text-sm font-normal leading-normal">在指定地點安裝並成功引爆炸彈，或殲滅所有防守方成員以贏得回合。</p>
+</div>
+<div class="flex flex-col gap-4 pb-3 bg-white/5 rounded-lg p-6 border border-white/10">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-4xl">verified_user</span>
+<p class="text-white text-xl font-medium leading-normal">防守方</p>
+</div>
+<p class="text-white/70 text-sm font-normal leading-normal">阻止炸彈被安裝，或在炸彈安裝後成功拆除它，亦可透過殲滅所有進攻方成員獲勝。</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">遊戲流程</h2>
+<div class="relative flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 px-4 py-8">
+<!-- Dashed line for desktop -->
+<div class="absolute top-1/2 left-0 w-full h-0.5 bg-none border-t-2 border-dashed border-white/20 hidden md:block"></div>
+<div class="flex flex-col items-center gap-3 text-center z-10 w-full md:w-1/3">
+<div class="flex items-center justify-center size-16 bg-white/10 border-2 border-primary rounded-full">
+<span class="material-symbols-outlined text-white text-3xl">groups</span>
+</div>
+<h3 class="text-white font-bold text-lg">準備階段</h3>
+<p class="text-white/70 text-sm">購買武器裝備，制定本回合戰術。</p>
+</div>
+<div class="w-0.5 h-8 bg-white/20 border-t-2 border-dashed border-white/20 md:hidden"></div>
+<div class="flex flex-col items-center gap-3 text-center z-10 w-full md:w-1/3">
+<div class="flex items-center justify-center size-16 bg-white/10 border-2 border-primary rounded-full">
+<span class="material-symbols-outlined text-white text-3xl">sword_rose</span>
+</div>
+<h3 class="text-white font-bold text-lg">進攻階段</h3>
+<p class="text-white/70 text-sm">雙方展開激烈交火，執行戰術目標。</p>
+</div>
+<div class="w-0.5 h-8 bg-white/20 border-t-2 border-dashed border-white/20 md:hidden"></div>
+<div class="flex flex-col items-center gap-3 text-center z-10 w-full md:w-1/3">
+<div class="flex items-center justify-center size-16 bg-white/10 border-2 border-primary rounded-full">
+<span class="material-symbols-outlined text-white text-3xl">swap_horiz</span>
+</div>
+<h3 class="text-white font-bold text-lg">攻守交換</h3>
+<p class="text-white/70 text-sm">達到指定回合數後，雙方交換陣營。</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">戰術與地圖</h2>
+<div class="p-4">
+<div class="border-b border-white/20">
+<nav aria-label="Tabs" class="-mb-px flex space-x-8">
+<a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#">規則詳情</a>
+<a class="border-transparent text-white/70 hover:text-white hover:border-white/30 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#">策略技巧</a>
+<a class="border-transparent text-white/70 hover:text-white hover:border-white/30 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#">地圖總覽</a>
+</nav>
+</div>
+<div class="py-6">
+<ul class="space-y-4 text-white/90 text-sm list-disc pl-5">
+<li><strong class="text-white">回合制：</strong>遊戲分為多個回合，先達到目標回合數的隊伍獲勝。</li>
+<li><strong class="text-white">經濟系統：</strong>根據每回合的表現（擊殺、勝利、失敗）獲得金錢，用於購買更強力的武器和裝備。</li>
+<li><strong class="text-white">單次生命：</strong>在單一回合中，死亡後無法復活，必須等到下一回合開始。</li>
+<li><strong class="text-white">時間限制：</strong>每個回合都有時間限制，進攻方必須在時間結束前安裝炸彈或殲滅敵人。</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">教學影片</h2>
+<div class="p-4">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden relative group" data-alt="A gameplay video thumbnail showing a first-person perspective in a futuristic corridor." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCB2nYnc_QQGmSDu56ecBcL0leFqDq4aYOeLNOQ93bYUAl1JwlyYf_LdiYPzvYmp1GXSZF_5AA64REuQXxGmqLzZ1L817hJX5_0DC8uHc-_qNQZNZpPBTdfJNz4NgeFXMIR5LUKNgjo10BYJXji9mSx8Y_yW2j08fiezXjuchMGK5ohw5h4iUzeaMmU9Qm31YdMErVchkz1wSllR-3OBi3_RpX4RJQU4r6sJ0l0fHKRxGeXTEMzBWaeRUlb01CxEjorC5LvOI6D8oLM");'>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<button class="bg-primary/80 backdrop-blur-sm text-white rounded-full p-4 group-hover:bg-primary transition-all">
+<span class="material-symbols-outlined text-5xl">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
